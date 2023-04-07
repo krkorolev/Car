@@ -1,0 +1,166 @@
+.header {
+  z-index: -1;
+}
+
+.header__menu {
+  display: grid;
+  grid-template-columns: 263px 1fr 236px;
+  gap: 28px;
+}
+
+.header__menu-btn {
+  display: none;
+  position: relative;
+  // width: 32px;
+  // height: 32px;
+  border: none;
+  background-color: transparent;
+
+  & span {
+    position: absolute;
+    width: 34px;
+    height: 3px;
+    background-color: red;
+    left: 4px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+
+    &:nth-child(1) {
+      transform: translateY(-10px);
+    }
+
+    &:nth-child(3) {
+      transform: translateY(10px);
+    }
+  }
+}
+
+.header.open .header__menu-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__menu-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+
+}
+
+.navigation {
+  display: grid;
+  align-items: center;
+}
+
+.header__items {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: start;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  gap: 47px;
+
+  a {
+    color: #000000;
+  }
+}
+
+
+.header__number-phone {
+  padding-top: 25px;
+}
+
+.button_phone,
+.header__item-phone {
+  padding: 16px 27px 16px 53px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/images/header/icon/icon-phone.svg");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    right: 183px;
+  }
+}
+
+.header__item-phone {
+  display: none;
+}
+
+
+
+@media (max-width:1490px) {
+  .header__item-phone {
+    display: block;
+
+    & a {
+      color: #fff !important;
+      font-size: 18px !important;
+      padding: 0px 0px !important;
+    }
+
+    &::before {
+      right: 246px;
+      top: 26px;
+    }
+  }
+
+  .header__menu-btn {
+    display: block;
+    z-index: 6;
+  }
+
+  .navigation {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: -360px;
+    background-color: #fff;
+    padding: 100px 20px 20px 20px;
+    z-index: 5;
+    width: 360px;
+    transition: transform .5s;
+    text-align: center;
+  }
+
+  .header__items {
+    display: block;
+
+    & a {
+      display: block;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      padding: 20px 0px;
+    }
+
+  }
+
+  .header.open .navigation {
+    transform: translateX(100%);
+
+  }
+
+  .header__menu {
+    grid-template-columns: 1fr 1fr 263px;
+  }
+
+
+}
+
+@media (max-width:620px) {
+  .header__number-phone {
+    display: none;
+  }
+
+  .logo {
+    grid-column-start: 3;
+  }
+}

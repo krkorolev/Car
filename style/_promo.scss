@@ -1,0 +1,320 @@
+.promo {
+    margin-top: 61px;
+    margin-bottom: 111px;
+    position: relative;
+
+
+    &::after {
+        content: "";
+        background-image: url(/images/promo/car.png);
+        width: 1003px;
+        height: 521px;
+        position: absolute;
+        top: 145px;
+        right: 70px;
+        z-index: 3;
+    }
+
+    &::before {
+        content: "";
+        background-image: url("/images/promo/ton-car.svg");
+        width: 973px;
+        height: 200px;
+        position: absolute;
+        top: 474px;
+        right: 80px;
+        // z-index: -1;
+    }
+}
+
+/* этой сеции зада тьфон и сделат ьему отрицательный марджин  */
+/* Кнопке плей сделать вручную через баттон */
+
+
+.promo_flex {
+    display: flex;
+    align-items: center;
+    gap: 161px;
+}
+
+.promo__play {
+    width: 181px;
+    height: 212px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+}
+
+.promo__link-video {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 94px;
+    text-align: center;
+    padding-top: 133px;
+    padding-left: 43px;
+    color: #ffffff;
+    position: relative;
+}
+
+.promo__link-video::after {
+    content: "";
+    position: absolute;
+    background-image: url("/images/promo/play.svg");
+    width: 80px;
+    height: 80px;
+    top: 33px;
+    right: 7px;
+}
+
+.promo__block {
+    padding-left: 15px;
+    width: 653px;
+    background: rgba(255, 255, 255, 0.64);
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    padding-top: 56px;
+    padding-left: 56px;
+    z-index: 2;
+}
+
+.promo__title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 90px;
+    text-transform: uppercase;
+    color: #282828;
+    padding-bottom: 39px;
+}
+
+.promo__title_disable {
+    display: none;
+}
+
+.promo__lists {
+    list-style: none;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    max-width: 454px;
+    padding-left: 40px;
+}
+
+.promo__list {
+    padding-bottom: 13px;
+    position: relative;
+}
+
+.promo__list::before {
+    content: "";
+    background-image: url("/images/promo/mark.svg");
+    height: 14px;
+    width: 19px;
+    position: absolute;
+    top: 9px;
+    left: -30px;
+}
+
+.promo__list_img::after {
+    content: "";
+    background-image: url("/images/promo/japan.svg");
+    height: 64px;
+    width: 67px;
+    position: absolute;
+    top: -12px;
+    right: 163px;
+}
+
+.promo__footer {
+    padding-top: 32px;
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    align-items: flex-start;
+}
+
+.button__promo {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 31px;
+    margin-bottom: 30px;
+}
+
+.button-play-video {
+    position: relative;
+    width: 181px;
+    height: 212px;
+    padding-top: 133px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    z-index: 5;
+
+    &::after {
+        content: '';
+        background-image: url("/images/promo/play.svg");
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 33px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 1740px) {
+    .promo::after {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .promo_flex {
+        display: flex;
+        gap: 80px
+    }
+}
+
+@media (max-width: 955px) {
+
+    .button-play-video,
+    .promo::before,
+    .promo::after {
+        display: none;
+    }
+
+    .promo__block {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 690px) {
+    .promo__title {
+        font-size: 60px;
+    }
+
+    .promo__lists {
+        font-size: 20px;
+    }
+
+    .button__promo {
+        padding: 31px 100px;
+    }
+
+    .promo__block {
+        padding-left: 8px;
+    }
+
+    .promo__title {
+        font-size: 50px;
+        line-height: 50px;
+
+    }
+
+    .promo__lists {
+        font-size: 16px;
+    }
+
+    .promo__list {
+        padding-bottom: 0px;
+    }
+
+    .promo__list_img::after {
+        right: 212px;
+
+    }
+
+    .button__promo {
+        margin-bottom: 0px;
+    }
+
+    .promo__footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promo__lists {
+        font-size: 14px;
+    }
+
+    .promo__list_img::after {
+        right: 210px;
+    }
+
+    .button__promo {
+        padding: 31px 54px;
+    }
+
+    .promo__title {
+        font-size: 45px;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    .body {
+        background-image: url("/images/promo/backgroung-img-small.png");
+        background-repeat: no-repeat;
+        background-size: 430px 700px;
+    }
+
+    .promo {
+        margin-bottom: 0px;
+    }
+
+    .promo__block {
+        background: none;
+        border: none;
+        padding-top: 36px;
+    }
+
+    .promo__title {
+        display: none;
+    }
+
+    .promo__title_disable {
+        display: block;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #282828;
+
+    }
+
+    .promo__lists {
+        padding: 30px;
+
+    }
+
+    .promo__list {
+        max-width: 300px;
+    }
+
+
+    .promo__footer {
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .promo__list_img::after {
+        right: 105px;
+    }
+
+
+    .button__promo {
+        margin-bottom: 6px;
+        padding: 31px 25px;
+
+    }
+
+}

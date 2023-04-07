@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="/index.js"></script>
+  </head>
+  <body class="body">
+     <header class="header">
+      <div class="container">
+        <div class="header__menu">
+          <button class="header__menu-btn" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="" class="logo">
+            <img src="/images/header/icon/logo.png" />
+          </a>
+          <nav class="navigation">
+            <ul class="header__items">
+              <li class="header__item"><a href="#">Авто из Кореи</a></li>
+              <li class="header__item"><a href="#">Авто из Казахстана</a></li>
+              <li class="header__item"><a href="#">Авто из ОАЭ</a></li>
+              <li class="header__item"><a href="#">Авто из Китая</a></li>
+              <li class="header__item"><a href="#">О нас</a></li>
+              <li class="header__item"><a href="#">Контакты</a></li>
+              <li class="button header__item-phone">
+                <a href="tel:78000111111">+7 (800) 011-11-11</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__number-phone">
+            <a class="button button_phone" href="tel:78000111111"
+              >+7 (800) 011-11-11</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="promo">
+        <div class="container promo_flex">
+          <div class="promo__block">
+            <h1 class="promo__title_disable">Авто</h1>
+            <h1 class="promo__title_disable">под заказ</h1>
+            <h1 class="promo__title">Автомобили под заказ</h1>
+            <ul class="promo__lists">
+              <li class="promo__list promo__list_img">Из Южной Кореи</li>
+              <li class="promo__list">С доставкой по всей России</li>
+              <li class="promo__list">
+                ВЫГОДА до 40% от цены на российском рынке
+              </li>
+            </ul>
+
+            <div class="promo__footer">
+              <button class="button button__promo">
+                Получить консультацию
+              </button>
+              <div class="social__link">
+                <a class="social__link_border" href="#">
+                  <img src="/images/header/icon/telegram.svg" alt="telegram" />
+                </a>
+                <a class="" href="#">
+                  <img src="/images/header/icon/youtube.svg" alt="youtube" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="button-play-video">
+            Смотреть <br />
+            Авто
+          </button>
+        </div>
+      </section>
+
+      <section class="bill">
+        <div class="container container__bill">
+          <h2 class="title bill__title">Процесс заказа и покупки автомобиля</h2>
+          <p class="bill__subtitle">из Южной Кореи в компании EncarRUS</p>
+          <ol class="bill__items">
+            <li class="bill__item">Предварительная консультация</li>
+            <li class="bill__item">Заключение договора</li>
+            <li class="bill__item">
+              Подбор подходящих вариантов на площадках исходя из бюджета
+            </li>
+            <li class="bill__item">
+              Выездная диагностика понравившегося варианта
+            </li>
+            <li class="bill__item">
+              Фото и видео отчет на а/м достойные вашего внимания
+            </li>
+            <li class="bill__item">Оплата а/м в Корею</li>
+            <li class="bill__item">Доставка а/м в порт Владивосток</li>
+            <li class="bill__item">
+              Растаможка автомобиля, получение ПТС и оставка до Вашего дома
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="help">
+        <div class="help__background"></div>
+        <div class="container help__grid">
+          <div class="help__forms">
+            <h2 class="title help__forms-title">
+              Помощь на всех этапах покупки
+            </h2>
+            <p class="help__forms-subtitle">
+              Оставьте заявку и наш менеджер перезвонит вам через 15 минут
+            </p>
+            <input class="help__forms-input" type="tel" placeholder="+7 ( )" />
+            <div class="help__forms-button">
+              <button href="#" class="button help__forms-link">
+                Получить консультацию
+              </button>
+            </div>
+          </div>
+          <ul class="help__lists">
+            <li class="help__list help__list_svg-like">
+              Поберем лучший вариант авто по наилучшей стоимости
+            </li>
+            <li class="help__list help__list_svg-photo">
+              Предоставим фото и видео отчет автомобиля
+            </li>
+            <li class="help__list help__list_svg-dollar">
+              Поможем купить валюту по выгодному курсу и подскажем как перевести
+              деньги за рубеж
+            </li>
+            <li class="help__list help__list_svg-search">
+              Наш эксперт тщательно осмотрит понравившийся экземпляр
+            </li>
+            <li class="help__list help__list_svg-file">
+              Подготовим все документы для таможни в РФ
+            </li>
+            <li class="help__list help__list_svg-tax">
+              Оптимизируем налоговые автомобили
+            </li>
+            <li class="help__list help__list_svg-garant">
+              Организуем перевозку и страхование груза
+            </li>
+            <li class="help__list help__list_svg-rubles">
+              Полностью русифицируем автомобиль
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="container">
+          <h2 class="title product__title">Популярные а/м из Кореи</h2>
+          <div class="product__slider">
+            <button class="swiper-button-next1"></button>
+            <button class="swiper-button-prev1"></button>
+            <div class="product__items swiper-wrapper">
+              <div class="product__item swiper-slide">
+                <img
+                  class="product__item-img"
+                  src="/images/product/kia-k5.png"
+                  alt="kia K5(optima)"
+                />
+                <div class="product__item-text">
+                  <h5 class="product__item-title">KIA K5 (Optima)</h5>
+                  <div class="product__lists">
+                    <dl class="product__list">
+                      <dt><span>Пробег</span></dt>
+                      <dd>До 90 тыс. км.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Год</span></dt>
+                      <dd>2018</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Мощность</span></dt>
+                      <dd>163 л.с.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Двигатель</span></dt>
+                      <dd>2.0 л</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Коробка</span></dt>
+                      <dd>Автомат</dd>
+                    </dl>
+                  </div>
+                  <div class="product__price">
+                    <dl class="product__price-rus">
+                      <dt>1 890 000 ₽</dt>
+                      <dd>Цена на вторичном рынке в РФ</dd>
+                    </dl>
+                    <dl class="product__price-korea">
+                      <dt>1 540 000 ₽</dt>
+                      <dd>Цена из Кореи во Владивостоке</dd>
+                    </dl>
+                  </div>
+                  <div class="link">
+                    <button href="#" class="button product__link">
+                      Подобрать аналог
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item swiper-slide">
+                <img
+                  class="product__item-img"
+                  src="/images/product/kia-k5-blue.png"
+                  alt="kia K5(optima)"
+                />
+                <div class="product__item-text">
+                  <h5 class="product__item-title">KIA K5 (Optima)</h5>
+                  <div class="product__lists">
+                    <dl class="product__list">
+                      <dt><span>Пробег</span></dt>
+                      <dd>До 90 тыс. км.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Год</span></dt>
+                      <dd>2018</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Мощность</span></dt>
+                      <dd>163 л.с.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Двигатель</span></dt>
+                      <dd>2.0 л</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Коробка</span></dt>
+                      <dd>Автомат</dd>
+                    </dl>
+                  </div>
+                  <div class="product__price">
+                    <dl class="product__price-rus">
+                      <dt>1 890 000 ₽</dt>
+                      <dd>Цена на вторичном рынке в РФ</dd>
+                    </dl>
+                    <dl class="product__price-korea">
+                      <dt>1 540 000 ₽</dt>
+                      <dd>Цена из Кореи во Владивостоке</dd>
+                    </dl>
+                  </div>
+                  <div class="link">
+                    <button href="#" class="button product__link">
+                      Подобрать аналог
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item swiper-slide">
+                <img
+                  class="product__item-img"
+                  src="/images/product/kia-k5.png"
+                  alt="kia K5(optima)"
+                />
+                <div class="product__item-text">
+                  <h5 class="product__item-title">KIA K5 (Optima)</h5>
+                  <div class="product__lists">
+                    <dl class="product__list">
+                      <dt><span>Пробег</span></dt>
+                      <dd>До 90 тыс. км.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Год</span></dt>
+                      <dd>2018</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Мощность</span></dt>
+                      <dd>163 л.с.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Двигатель</span></dt>
+                      <dd>2.0 л</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Коробка</span></dt>
+                      <dd>Автомат</dd>
+                    </dl>
+                  </div>
+                  <div class="product__price">
+                    <dl class="product__price-rus">
+                      <dt>1 890 000 ₽</dt>
+                      <dd>Цена на вторичном рынке в РФ</dd>
+                    </dl>
+                    <dl class="product__price-korea">
+                      <dt>1 540 000 ₽</dt>
+                      <dd>Цена из Кореи во Владивостоке</dd>
+                    </dl>
+                  </div>
+                  <div class="link">
+                    <button href="#" class="button product__link">
+                      Подобрать аналог
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item swiper-slide">
+                <img
+                  class="product__item-img"
+                  src="/images/product/kia-k5.png"
+                  alt="kia K5(optima)"
+                />
+                <div class="product__item-text">
+                  <h5 class="product__item-title">KIA K5 (Optima)</h5>
+                  <div class="product__lists">
+                    <dl class="product__list">
+                      <dt><span>Пробег</span></dt>
+                      <dd>До 90 тыс. км.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Год</span></dt>
+                      <dd>2018</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Мощность</span></dt>
+                      <dd>163 л.с.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Двигатель</span></dt>
+                      <dd>2.0 л</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Коробка</span></dt>
+                      <dd>Автомат</dd>
+                    </dl>
+                  </div>
+                  <div class="product__price">
+                    <dl class="product__price-rus">
+                      <dt>1 890 000 ₽</dt>
+                      <dd>Цена на вторичном рынке в РФ</dd>
+                    </dl>
+                    <dl class="product__price-korea">
+                      <dt>1 540 000 ₽</dt>
+                      <dd>Цена из Кореи во Владивостоке</dd>
+                    </dl>
+                  </div>
+                  <div class="link">
+                    <button href="#" class="button product__link">
+                      Подобрать аналог
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__item swiper-slide">
+                <img
+                  class="product__item-img"
+                  src="/images/product/kia-k5.png"
+                  alt="kia K5(optima)"
+                />
+                <div class="product__item-text">
+                  <h5 class="product__item-title">KIA K5 (Optima)</h5>
+                  <div class="product__lists">
+                    <dl class="product__list">
+                      <dt><span>Пробег</span></dt>
+                      <dd>До 90 тыс. км.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Год</span></dt>
+                      <dd>2018</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Мощность</span></dt>
+                      <dd>163 л.с.</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Двигатель</span></dt>
+                      <dd>2.0 л</dd>
+                    </dl>
+                    <dl class="product__list">
+                      <dt><span>Коробка</span></dt>
+                      <dd>Автомат</dd>
+                    </dl>
+                  </div>
+                  <div class="product__price">
+                    <dl class="product__price-rus">
+                      <dt>1 890 000 ₽</dt>
+                      <dd>Цена на вторичном рынке в РФ</dd>
+                    </dl>
+                    <dl class="product__price-korea">
+                      <dt>1 540 000 ₽</dt>
+                      <dd>Цена из Кореи во Владивостоке</dd>
+                    </dl>
+                  </div>
+                  <div class="link">
+                    <button href="#" class="button product__link">
+                      Подобрать аналог
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="calculation">
+        <div class="container">
+          <h2 class="title calculation__title">
+            Сделаем расчёт на а/м Kia Mohave 2019 года
+          </h2>
+          <div class="calculation__items">
+            <div class="calculation__item">
+              <h4 class="calculation__item-title">
+                Стоимость автомобиля в Корее
+              </h4>
+              <p class="calculation__item-text">По курсу на день покупки</p>
+              <p class="calculation__item-price">50 млн вон</p>
+            </div>
+            <div class="calculation__item">
+              <h4 class="calculation__item-title">Расходы в Корее</h4>
+              <p class="calculation__item-text calculation__item-text_big">
+                Доставка а/м до порта Владивосток, стоянка, перегоны, снятие а/м
+                с учета, подготовка экспортных документов, растонировка (снятие
+                темной пленки с передней полусферы и лобового стекла)
+              </p>
+              <p class="calculation__item-price">3,5 млн вон</p>
+            </div>
+            <div class="calculation__item">
+              <h4 class="calculation__item-title">Таможня</h4>
+              <p class="calculation__item-text">
+                Пошлина, СБКТС, получение ЭЛПТС, перегон, комиссия брокера
+              </p>
+              <p class="calculation__item-price">650 тыс руб</p>
+            </div>
+            <div class="calculation__item">
+              <h4 class="calculation__item-title">Наша Комиссия</h4>
+              <p class="calculation__item-text">
+                За поиск а/м, организацию и сопровождение сделки
+              </p>
+              <p class="calculation__item-price">100 тыс руб</p>
+            </div>
+            <div class="calculation__item">
+              <h4 class="calculation__item-title">
+                Доставка до Москвы автовозом
+              </h4>
+              <p class="calculation__item-text calculation__item-text_big">
+                Стоимость зависит от габаритов авто и города отправки) + Вы
+                можете сами забрать а/м во Владивостоке, чтобы совершить
+                незабываемое путешествие по всей России
+              </p>
+              <p class="calculation__item-price">150 тыс вон</p>
+            </div>
+            <div class="calculation__item">
+              <h4 class="calculation__item-title">Расходы в РФ</h4>
+              <p class="calculation__item-text">
+                Комиссия банка за конвертацию валюты и перевод средств за рубеж
+              </p>
+              <p class="calculation__item-price">80 тыс руб</p>
+            </div>
+          </div>
+          <div class="total-price">
+            <p>
+              Итоговая стоимость а/м под ключ
+              <span class="total-price_red">3 280 000 руб</span>
+            </p>
+            <p>Стоимость аналогичного а/м в РФ<span>4 900 000 руб</span></p>
+          </div>
+        </div>
+      </section>  
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="title advantages__title">
+            Преимущества покупки авто из Кореи
+          </h2>
+          <div class="advantages_flex">
+            <div class="advantages__items">
+              <p class="advantages__item">Честный пробег</p>
+              <p class="advantages__item">Сервисное обслуживание</p>
+              <p class="advantages__item">Выездная диагностика</p>
+              <p class="advantages__item">Прозрачная история а/м</p>
+              <p class="advantages__item">
+                Разнообразие двигателей и трансмиссий
+              </p>
+              <p class="advantages__item">Выездная диагностика</p>
+              <p class="advantages__item">Стоимость автомобиля</p>
+              <p class="advantages__item">Качество сборки</p>
+              <p class="advantages__item">Богатые комплектации</p>
+              <p class="advantages__item">Европейские автомобили</p>
+              <p class="advantages__item">Американские автомобили</p>
+              <p class="advantages__item">Коммерческий транспорт</p>
+              <p class="advantages__item">Русификация меню</p>
+            </div>
+            <div class="advantages__aside">
+              <img
+                class="advantages__aside-img"
+                src="/images/advantages/car.png"
+              />
+              <div class="advantages__aside-wrpap">
+                <h4 class="advantages__aside-title">Честный пробег</h4>
+                <p class="advantages__aside-text">
+                  Скрутить пробег в Корее нельзя, т.к. это уголовное
+                  преступление и никто не будет с этим связываться + пробег
+                  легко проверить через базы страховых компаний
+                </p>
+                <div class="advantages__slider">
+                  <button type="button" class="button-slider_left"></button>
+                  <button type="button" class="button-slider_right"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantages_grid-adaptive swiper">
+            <button class="swiper-button-next"></button>
+            <button class="swiper-button-prev"></button>
+            <div class="advantages__items-adaptive swiper-wrapper">
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+              <div class="advantages__item-adaptive swiper-slide">
+                <img
+                  class="advantages__aside-img"
+                  src="/images/advantages/car.png"
+                />
+                <p class="advantages__item-title-adaptive">Честный пробег</p>
+                <p class="advantages__item-text-adaptive">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  eaque totam eligendi suscipit maxime corrupti soluta?
+                  Explicabo quae, id modi, laudantium quo dolore, molestiae ut
+                  ea nemo cupiditate repellat! Repudiandae.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="buttom__group">
+            <button class="button__slider"></button>
+            <button class="button__slider"></button>
+            <button class="button__slider"></button>
+          </div>
+        </div>
+      </section>
+
+       <section class="movie">
+        <div class="container container__movie">
+          <h2 class="title movie__title">Пример видеообзора</h2>
+          <p class="movie__text">
+            Как выглядит осмотр авто на примере Hyundai Palisade
+          </p>
+          <video class="video" controls poster="/images/movie/background-movie.png" preload="none"></video>
+        </div>
+      </section> 
+
+      <section class="questions">
+        <div class="container">
+          <h2 class="title questions__title">Вопрос-ответ</h2>
+          <ul class="questions__items">
+            <li id="1" class="questions__item">Какие сроки поставки а/м?
+              <p class="item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+
+            </li>
+            <li id="2" class="questions__item">
+              Что проверяет технический специалист при осмотре а/м?
+              <p class="item-text">Наш партнер в Корее - это официальная экспортная компания, она же выставляет инвойс, на ее реквизиты Вы оплачиваете а/м.
+                До отправки во Владивосток, а/м хранятся у нашего партнера на охраняемой парковке около порта.</p>
+            </li>
+            <li id="3" class="questions__item">
+              Страхуются ли автомобили при перевозке из Кореи в Россию?
+              <p class="item-text">Наш партнер в Корее - это официальная экспортная компания</p>
+            </li>
+            <li id="4" class="questions__item">
+              Кто в Корее подбирает автомобили и кому мы платим, если вы
+              находитесь в Москве?
+
+              <p class="item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+
+            </li>
+            <li id="5" class="questions__item">
+              Какие юридические гарантии есть при работе с Вашей компанией?
+              <p class="item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+
+            </li>
+            <li id="6" class="questions__item">
+              Мы работаем строго по договору, оплата проходит в несколько
+              этапов, все этапы максимально прозрачны.
+              <p class="item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container forms__wrap">
+          <div class="forms__inner">
+            <h2 class="title forms__title">
+              Получите бесплатную консультацию от наших экспертов
+              <span>EncarRUS</span>
+            </h2>
+            <p class="forms__text">
+              Оставьте ваши контакты и наши эксперты свяжутся с вами для
+              консультации по вопросам покупки авто
+            </p>
+            <button href="#" class="button forms__button">
+              Получить консультацию
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="title cotntacts__title">Контакты</h2>
+          <div class="contacts_wrap">
+            <div class="contacts__inner contacts__inner_msk">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.458052556208!2d37.71379831564511!3d55.78528378056203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53512ca29e021%3A0xe6cc86537e745b0!2z0JzQsNC70LDRjyDQodC10LzQtdC90L7QstGB0LrQsNGPINGD0LsuLCAxNCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzAyMw!5e0!3m2!1sru!2sge!4v1679479148135!5m2!1sru!2sge"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="contacts__inner_block">
+                <h4 class="contacts__inner-title">Филиал Москва</h4>
+                <p class="contacts__inner-number">+7 (800) 011-11-11</p>
+              </div>
+              <p class="contacts__inner-adress">
+                Москва, ул. Семеновская д 14 офис 122
+              </p>
+            </div>
+            <div class="contacts__inner contacts__inner_smr">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.5757751965143!2d50.131478315527865!3d53.20752397995015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661ef34247e38f%3A0xccb51c445310fb0c!2z0L_RgC3Rgi4g0JvQtdC90LjQvdCwLCAxNCwg0KHQsNC80LDRgNCwLCDQodCw0LzQsNGA0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCA0NDMxMTA!5e0!3m2!1sru!2sge!4v1679479814469!5m2!1sru!2sge"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="contacts__inner_block">
+                <h4 class="contacts__inner-title">Филиал Самара</h4>
+                <p class="contacts__inner-number">+7 (800) 011-11-11</p>
+              </div>
+              <p class="contacts__inner-adress">
+                Самара, ул. Семеновская д 14 офис 122
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container contaier__inner">
+          <div class="footer__copirater">
+            <a href="" class="logo footer__logo">
+              <img src="/images/header/icon/logo.png" />
+            </a>
+            <p>
+              © 2022 EncarRUS. Все права защищены, согласно ГК РФ ст. 1225 -
+              1551 об авторском праве. Любое копирование материалов сайта и
+              элементов включая изображения строго запрещены.
+            </p>
+          </div>
+          <div class="footer__lists">
+            <a href="#" class="footer__link">Авто из Кореи </a>
+            <a href="#" class="footer__link">Главная</a>
+            <a href="#" class="footer__link">Авто из Казахстана</a>
+            <a href="#" class="footer__link">О компании</a>
+            <a href="#" class="footer__link">Авто из ОАЭ</a>
+            <a href="#" class="footer__link">Контакты</a>
+            <a href="#" class="footer__link">Авто из Китая</a>
+          </div>
+          <div class="footer__contacts">
+            <a class="button button_phone" href="tel:88000111111"
+              >+7 (800) 011-11-11</a
+            >
+            <p class="footer__contacts-adress">
+              Москва, ул. Семеновская д 14 офис 122
+            </p>
+          </div>
+        </div>
+      </footer> 
+    </main>
+  </body>
+</html>

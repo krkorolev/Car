@@ -1,0 +1,53 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+// почитать про gulp
+.body {
+  background-image: url("/images/promo/backgroung-img.png");
+  background-repeat: no-repeat;
+  background-size: 1920px 840px;
+}
+
+.button {
+  background-color: #fa002c;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Montserrat';
+}
+
+.container {
+  max-width: 1457px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 69px;
+}
+
+@import "header.scss";
+@import "promo.scss";
+@import "bill.scss";
+@import "help.scss";
+@import "product.scss";
+@import "calculation.scss";
+@import "advantages.scss";
+@import "movie.scss";
+@import "questions.scss";
+@import "forms.scss";
+@import "contacts.scss";
+@import "footer.scss";

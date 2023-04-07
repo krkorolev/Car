@@ -1,0 +1,123 @@
+@charset "UTF-8";
+.promo {
+  margin-top: 61px;
+  margin-bottom: 111px;
+  position: relative;
+}
+
+/* этой сеции зада тьфон и сделат ьему отрицательный марджин  */
+/* Кнопке плей сделать вручную через баттон */
+.promo::after {
+  content: "";
+  background-image: url("/images/promo/car.png");
+  width: 1003px;
+  height: 521px;
+  position: absolute;
+  top: -108px;
+  right: -286px;
+  z-index: 20;
+}
+
+/* обрезать ее в фигме */
+.promo_flex {
+  display: flex;
+  align-items: center;
+  gap: 161px;
+}
+
+.promo__play {
+  width: 181px;
+  height: 212px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+}
+
+.promo__link-video {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 94px;
+  text-align: center;
+  padding-top: 133px;
+  padding-left: 43px;
+  color: #ffffff;
+  position: relative;
+}
+
+.promo__link-video::after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/promo/play.svg");
+  width: 80px;
+  height: 80px;
+  top: 33px;
+  right: 7px;
+}
+
+.promo__block {
+  height: 542px;
+  width: 653px;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  padding-top: 56px;
+  padding-left: 56px;
+}
+
+.promo__title {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #282828;
+  padding-bottom: 39px;
+}
+
+.promo__lists {
+  list-style: none;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 36px;
+  max-width: 454px;
+  padding-left: 40px;
+}
+
+.promo__list {
+  padding-bottom: 13px;
+  position: relative;
+}
+
+.promo__list::before {
+  content: "";
+  background-image: url("/images/promo/mark.svg");
+  height: 14px;
+  width: 19px;
+  position: absolute;
+  top: 9px;
+  left: -30px;
+}
+
+.promo__list_img::after {
+  content: "";
+  background-image: url("/images/promo/japan.svg");
+  height: 44px;
+  width: 56px;
+  position: absolute;
+  top: -12px;
+  right: 163px;
+}
+
+.promo__footer {
+  padding-top: 32px;
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.button__promo {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 31px;
+}/*# sourceMappingURL=promo.css.map */

@@ -1,0 +1,44 @@
+.header__menu {
+  display: grid;
+  grid-template-columns: 263px 1fr 236px;
+  gap: 28px;
+}
+
+.navigation {
+  display: grid;
+  align-items: center;
+}
+
+.header__items {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: start;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  gap: 47px;
+}
+.header__items a {
+  color: #000000;
+}
+
+.header__number-phone {
+  padding-top: 25px;
+}
+
+.button_header {
+  padding: 16px 27px 16px 53px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+}
+.button_header::before {
+  content: "";
+  background-image: url("/images/header/icon/icon-phone.svg");
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 18px;
+  right: 183px;
+}/*# sourceMappingURL=header.css.map */
